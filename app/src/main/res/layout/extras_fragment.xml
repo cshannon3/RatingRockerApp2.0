@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expExtras"
+    android:layout_below="@+id/plusExtras"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#282828"
+    >
+
+    <ToggleButton
+        android:id="@+id/tempotoggle"
+        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+        android:background="#282828"
+        android:textOff="Tempo"
+        android:textColor="#d3d3d3"
+        android:textOn="Tempo-On" />
+
+    <SeekBar
+        android:id="@+id/tempo_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_row="1"
+        android:max="2"
+        android:paddingLeft="30dp"
+        android:progress="1"
+        android:textColor="#d3d3d3" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_gravity="bottom"
+        android:textColor="#d3d3d3"
+        android:layout_marginStart="5dp"
+        android:text="slow"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_column="5"
+        android:layout_row="1"
+        android:layout_gravity="bottom"
+        android:textColor="#d3d3d3"
+        android:text="fast"/>
+
+    <ToggleButton
+        android:id="@+id/fittoggle"
+        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_columnSpan="2"
+        android:background="#282828"
+        android:textOff="Fit"
+        android:textColor="#d3d3d3"
+        android:textOn="Fit-On" />
+
+    <SeekBar  android:id="@+id/fit_seekBar"
+        android:max="2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:progress="1"
+        android:paddingLeft="30dp"
+        android:layout_width="250dp"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="5dp"
+        android:textColor="#d3d3d3"
+        android:text="heavy"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_column="5"
+        android:layout_row="2"
+        android:layout_gravity="bottom"
+        android:textColor="#d3d3d3"
+        android:text="light"/>
+    <ToggleButton
+        android:id="@+id/conftoggle"
+        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_columnSpan="2"
+        android:background="#282828"
+        android:textOff="Conf"
+        android:textColor="#d3d3d3"
+        android:textOn="Conf-On" />
+    <SeekBar  android:id="@+id/conf_seekBar"
+        android:max="2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:progress="1"
+        android:paddingLeft="30dp"
+        android:layout_width="250dp"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="bottom"
+        android:textColor="#d3d3d3"
+        android:text="low"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_column="5"
+        android:layout_row="3"
+        android:layout_gravity="bottom"
+        android:textColor="#d3d3d3"
+        android:text="high"/>
+
+</GridLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/gridLayout2"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:id="@+id/checkboxtextGenre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:checkMark="@android:drawable/checkbox_on_background"
+        android:layout_column="0"
+        android:checked="false"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre1spinner"
+        android:layout_margin="2dp"
+        android:layout_column="1"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#d3d3d3"
+        />
+    <CheckBox
+        android:id="@+id/checkboxtextGenre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_column="2"
+        android:checkMark="@android:drawable/checkbox_on_background"
+        android:checked="false"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre2spinner"
+        android:layout_margin="2dp"
+        android:layout_column="3"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textColor="#d3d3d3"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <CheckBox
+        android:id="@+id/checkboxtextGenre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_column="4"
+        android:checkMark="@android:drawable/checkbox_on_background"
+        android:checked="false"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre3spinner"
+        android:layout_margin="2dp"
+        android:layout_column="5"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textColor="#d3d3d3"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <CheckBox
+        android:id="@+id/checkboxtextGenre4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:checkMark="@android:drawable/checkbox_off_background"
+        android:checked="false"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre4spinner"
+        android:layout_margin="2dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textColor="#d3d3d3"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <CheckBox
+        android:id="@+id/checkboxtextGenre5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:checkMark="@android:drawable/checkbox_off_background"
+        android:checked="false"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre5spinner"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_margin="2dp"
+        android:layout_row="1"
+        android:textColor="#d3d3d3"
+        android:clickable="true"
+        android:focusable="true"/>
+    <CheckBox
+        android:id="@+id/checkboxtextGenre6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:checkMark="@android:drawable/checkbox_off_background"
+        android:checked="false"
+        android:layout_column="4"
+        android:layout_row="1"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#d3d3d3" />
+    <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+        android:id="@+id/genre6spinner"
+        android:layout_margin="2dp"
+        android:layout_column="5"
+        android:layout_row="1"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textColor="#d3d3d3"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+
+</GridLayout>

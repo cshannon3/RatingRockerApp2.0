@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282828">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <!--
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/play_track_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:drawable/ic_menu_add"
+            android:onClick="onNewButtonClicked"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/RatingRockerTitle"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:text="Rating Rocker"
+            android:textStyle="italic|bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/pla"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:background="@android:drawable/ic_menu_sort_by_size"
+
+            android:textColor="#000000"
+            />
+        <ToggleButton
+            android:id="@+id/spotifybutton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="@drawable/spotifyonoff"
+            android:onClick="onSpotifyButtonClicked"
+            android:textOn=""
+            android:textOff=""
+            />
+        <ToggleButton
+            android:id="@+id/loadbutton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/logoonoff"
+            android:onClick="onLoafButtonClicked"
+            android:textOn=""
+            android:textOff=""
+            />
+
+
+    </GridLayout>
+-->
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/tool"
+        android:background="#000000">
+
+        <GridLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:background="#FF0B2B61">
+            <ImageView
+                android:id="@+id/cover_art"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="0"
+                android:layout_marginLeft="3.5dp"
+                android:layout_marginTop="3.5dp"
+                android:layout_row="0"
+                android:layout_rowSpan="2"
+                android:contentDescription="@string/cover_art" />
+
+            <TextView
+                android:id="@+id/metadatas"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="60dp"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_row="0"
+                android:text="@string/song_info"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+            <ToggleButton
+                android:id="@+id/playlistswitch_toggle"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="#FF0B2B61"
+                android:textOff="1"
+                android:textOn="2"
+                android:onClick="onPlaylistSwitch"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+
+            <Spinner
+                android:id="@+id/loadplaylistspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_row="1"
+                android:focusable="false"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#d3d3d3"
+
+                android:textStyle="bold" />
+        </GridLayout>
+
+
+        <GridLayout
+            android:id="@+id/playbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:background="#FF0B2B61">
+
+            <ToggleButton
+                android:id="@+id/toggle_shuffle_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:onClick="onToggleShuffleButtonClicked"
+                android:textOff="OO"
+                android:textOn="OC"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/skip_prev_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:drawable/ic_media_previous"
+                android:onClick="onSkipToPreviousButtonClicked"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <ToggleButton
+                android:id="@+id/pause_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@drawable/playpause"
+                android:onClick="onPauseButtonClicked"
+                android:textColor="#000000"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/skip_next_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:background="@android:drawable/ic_media_next"
+                android:onClick="onSkipToNextButtonClicked"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+
+            <ToggleButton
+                android:id="@+id/second_look_toggle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_row="0"
+                android:background="@drawable/secondlookonoff"
+
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/favorite_toggle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_row="0"
+                android:background="@drawable/staronoff"
+                android:textOff=""
+                android:textOn=""/>
+
+            <ToggleButton
+                android:id="@+id/up_button"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_column="4"
+                android:layout_gravity="top"
+                android:layout_row="0"
+                android:background="@drawable/voteuparrowoff"
+                android:onClick="onUpButtonClicked"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/upcountgreen"
+                android:layout_width="10dp"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_row="0"
+                android:text="@string/upcount"
+                android:textColor="#d3d3d3"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <ToggleButton
+                android:id="@+id/down_button"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_column="5"
+                android:layout_gravity="bottom"
+                android:layout_row="0"
+                android:background="@drawable/votedownarrowoff"
+                android:onClick="onDownButtonClicked"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/downcountred"
+                android:layout_width="20dp"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_row="0"
+                android:text="@string/downcount"
+                android:textColor="#d3d3d3"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_below="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_below="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0B2B61">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_text_1" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_text_2" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_text_3" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <!--
+    <GridLayout
+        android:id="@+id/list_playbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/savebutton" >
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:onClick="onListBackButtonClicked"
+            android:textColor="#000000"
+            android:text="Back" />
+<Button
+    android:id="@+id/listplaybutton"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+   android:layout_column="1"
+    android:onClick="onListPlayButtonClicked"
+    android:textColor="#000000"
+    android:text="Play" />
+    <Button
+        android:id="@+id/listshuffbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+      android:layout_column="2"
+        android:onClick="onListShuffButtonClicked"
+        android:textColor="#000000"
+        android:text="shuff" />
+        <Button
+            android:id="@+id/playlistcreatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="3"
+            android:onClick="onPlaylistCreateButtonClicked"
+            android:textColor="#000000"
+            android:text="create" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:onClick="onSaveButtonClicked"
+        android:textColor="#000000"
+        android:text="@string/save_rating" />  -->
+</RelativeLayout>
+
+

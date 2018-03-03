@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282828"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:id="@+id/expandbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_add"
+            android:textOff=""
+            android:textOn=""/>
+        <TextView
+            android:id="@+id/filtersubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library Filters"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/filter_seekbar_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+</LinearLayout>

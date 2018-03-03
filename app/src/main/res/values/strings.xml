@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">RatingRockerApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <string name="new_query">new playlist</string>
+    <string name="playlist_menu_title">Playlists</string>
+    <string name="player">Player</string>
+    <string name="getsong">GetSong</string>
+    <string name="song_info">song info</string>
+    <string name="rap">Rap</string>
+    <string name="alt">Alt/Indie/Rock</string>
+    <string name="edm">EDM</string>
+    <string name="popular">Popular</string>
+    <string name="pop">Pop</string>
+    <string name="soul">Soul/Funk</string>
+    <string name="beach">Beach</string>
+    <string name="other">Other</string>
+    <string name="save_rating">Save Rating</string>
+    <string name="song_freshness">Song Freshness</string>
+    <string name="party_vibe_rating">Party Vibe Rating:  </string>
+    <string name="chill_vibe_rating">Chill Vibe Rating:  </string>
+    <string name="study_vibe_rating">Study Vibe Rating:  </string>
+    <string name="chillval">0</string>
+    <string name="partyval">0</string>
+    <string name="studyval">0</string>
+    <string name="freshnessval">0</string>
+    <string name="plause_button">Play</string>
+    <string name="skip_next_button">Skip</string>
+    <string name="skip_prev_button">Last</string>
+    <string name="toggle_shuffle_button">Shuf</string>
+    <string name="playlist_button">P</string>
+    <string name="datasavebutton">Button</string>
+    <string name="song_id">Song ID</string>
+    <string name="vibes">Vibes</string>
+    <string name="fresh">Fresh</string>
+    <string name="genres">Genres</string>
+    <string name="options_pagetitle">Options Page</string>
+    <string name="song_name">song name</string>
+    <string name="play_track_button">P</string>
+    <string name="song_title">song name</string>
+    <string name="play_playlist">P</string>
+    <string name="upcount">0</string>
+    <string name="downcount">0</string>
+    <string name="cover_art">cover art</string>
+    <string name="song_1">song 1</string>
+    <string name="deep">deepoff</string>
+    <string name="DEEP">DEEPon</string>
+    <string name="somewhat2">somewhat2</string>
+    <string name="searchbutton">Search</string>
+    <string name="savebutton">Save</string>
+
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

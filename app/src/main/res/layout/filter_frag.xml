@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828">
+
+
+    <TextView
+        android:id="@+id/filtertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Library Filters"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+    <ListView
+        android:id="@+id/results_list"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/filtertitle"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        ></ListView>
+
+
+
+
+    <GridLayout
+        android:id="@+id/spotifyfilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filtertitle">
+        <TextView
+            android:id="@+id/Popularbutton"
+            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="2"
+            android:background="#282828"
+            android:text="Popularity"
+            android:textColor="#d3d3d3"
+            />
+
+        <ToggleButton
+            android:id="@+id/deeppopular"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:background="#282828"
+            android:checked="false"
+            android:textColor="#d3d3d3"
+            android:textOff="@string/deep"
+            android:textOn="@string/DEEP"
+            />
+        <ToggleButton  android:id="@+id/somewhatpopular"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:textOff="@string/somewhat2"
+            android:textOn="SOMEWHAT1"
+            />
+        <ToggleButton  android:id="@+id/verypopular"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:textOff="veryoff"
+            android:textOn="VERYon"
+            />
+        <TextView
+            android:id="@+id/moodbutton"
+            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="2"
+            android:background="#282828"
+            android:text="Mood"
+            android:textColor="#d3d3d3"
+            />
+        <ToggleButton  android:id="@+id/amped"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:textOff="ampedoff"
+            android:textOn="AMPEDon"
+            />
+        <ToggleButton  android:id="@+id/sad"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:textOff="sadoff"
+            android:textOn="SADon"
+            />
+        <ToggleButton  android:id="@+id/happy"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:textOff="happyoff"
+            android:textOn="HAPPYon"
+            />
+        <TextView
+            android:id="@+id/addedbutton"
+            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnSpan="2"
+            android:background="#282828"
+            android:text="Month Added"
+            android:textColor="#d3d3d3" />
+        <Spinner  android:id="@+id/addedspinner"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+
+            />
+        <TextView  android:id="@+id/releaseyear"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+            android:text="Release Year"
+            />
+        <Spinner  android:id="@+id/releasespinner"
+            android:layout_column="4"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:background="#282828"
+
+            />
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282828">
+    <TextView
+        android:id="@+id/filtertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Library Filters"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/addgenrebutton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/genrebar2"
+        android:background="@android:drawable/ic_menu_add" />
+
+    <GridLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/filtertitle"
+        android:id="@+id/genrebar2"
+        >
+
+
+        <Spinner
+            android:id="@+id/maingenre12"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+
+
+            />
+
+        <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+            android:id="@+id/genre1spinner2"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_row="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="#d3d3d3"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <Spinner
+            android:id="@+id/maingenre22"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+
+
+            />
+        <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+            android:id="@+id/genre2spinner2"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_row="1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#d3d3d3"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="wrap"
+            />
+        <Spinner
+            android:id="@+id/maingenre32"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+
+
+            />
+        <com.ratingrocker.ratingrockerapp.MultiSelectionSpinner
+            android:id="@+id/genre3spinner2"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_row="2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="#d3d3d3"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genrebar2"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/filter_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></ListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="Search"/>
+
+</RelativeLayout>

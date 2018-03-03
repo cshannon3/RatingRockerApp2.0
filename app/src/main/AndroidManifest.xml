@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ratingrocker.ratingrockerapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logomaybe"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logomaybe"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <receiver
+            android:name=".RecSpotifyBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.spotify.music.metadatachanged" />
+                <!-- <action android:name="com.spotify.music.playbackstatechanged"/> -->
+            </intent-filter>
+        </receiver>
+        <activity android:name=".PlayerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spotify.sdk.android.authentication.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".CreateNewPlaylist"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+    </application>
+
+</manifest>

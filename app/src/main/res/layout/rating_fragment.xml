@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_below="@+id/gridLayout2"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout android:id="@+id/gridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/chilViberating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="3"
+                android:text="@string/chill_vibe_rating"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/chilvibevalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:focusable="false"
+                android:text="@string/chillval"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+            <!-- This will open up the other ratings-->
+
+
+            <SeekBar
+                android:id="@+id/chillseekBar"
+                style="@android:style/Widget.Material.RatingBar.Indicator"
+                android:layout_width="350dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:layout_row="2"
+                android:focusable="false"
+                android:max="100"
+                android:progress="10"
+                android:thumb="@android:drawable/btn_star_big_on" />
+
+
+
+        </GridLayout>
+        <GridLayout android:id="@+id/gridLayout2"
+            android:layout_below="@+id/gridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+            <TextView
+                android:id="@+id/partyViberating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="3"
+                android:text="Party Vibe Rating"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/partyvibevalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:focusable="false"
+                android:text="@string/chillval"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+            <!-- This will open up the other ratings-->
+
+
+            <SeekBar
+                android:id="@+id/partyseekBar"
+                style="@android:style/Widget.Material.RatingBar.Indicator"
+                android:layout_width="350dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+
+                android:layout_row="2"
+                android:focusable="false"
+                android:max="100"
+                android:progress="10"
+                android:thumb="@android:drawable/btn_star_big_on" />
+
+
+        </GridLayout>
+        <GridLayout android:id="@+id/gridLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <TextView
+                android:id="@+id/soloViberating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Mellow Vibe Rating:"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/solovibevalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:focusable="false"
+                android:text="@string/chillval"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/soloseekBar"
+                style="@android:style/Widget.Material.RatingBar.Indicator"
+                android:layout_width="350dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:layout_row="2"
+                android:focusable="false"
+                android:max="100"
+                android:progress="10"
+                android:thumb="@android:drawable/btn_star_big_on" />
+
+
+        </GridLayout>
+        <GridLayout android:id="@+id/gridLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <TextView
+                android:id="@+id/freshViberating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="3"
+                android:text="Fresh Vibe Rating:"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/freshvibevalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:focusable="false"
+                android:text="@string/chillval"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+
+            <!-- This will open up the other ratings-->
+
+            <SeekBar
+                android:id="@+id/freshseekBar"
+                style="@android:style/Widget.Material.RatingBar.Indicator"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+
+                android:layout_row="2"
+                android:focusable="false"
+                android:max="100"
+                android:progress="10"
+                android:thumb="@android:drawable/btn_star_big_on" />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
