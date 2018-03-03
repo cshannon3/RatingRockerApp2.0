@@ -96,7 +96,7 @@ public class PlayerActivity extends AppCompatActivity implements
     private static final String CLIENT_ID = "d570917696114c588cc8e1b302d801ed";
     // TODO: Replace with your redirect URI
     private static final String REDIRECT_URI = "rating-rocker-login1://callback";
-    final String clientSecret = "1787e07da26d42529da9768a79ac6dd5";
+    final String clientSecret = "";
     private static final String TAG = "Mymessages";
     SpotifyApi api;
     SpotifyService spotify;
